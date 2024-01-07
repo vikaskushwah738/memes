@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding:0;
+}
+.pop {
+  
+    justify-content: space-between; /* Adjust this based on your layout preferences */
+    align-items: center; /* Align items vertically in the center */
+    padding: 10px; /* Add padding as needed */
+    background-color: #26d1c9; 
+  }
+  
+  ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    margin-right: 20px; /* Add margin between list items */
+  }
+  
+  .pop ul li a {
+    text-decoration: none; /* Remove default underline */
+    color: inherit; /* Use the default text color */
+  }
+  
