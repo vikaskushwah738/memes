@@ -12,12 +12,13 @@ function Edit() {
 
     return (
         <div className='container'><br />
-            <div ref={memeRef} style={{width:"500px", border:"1px solid"}}><br />
+            <div ref={memeRef} style={{width:"500px", border:"1px solid"}}>
                 <img src={params.get('url')} alt=""  width='250px' />     
+                {Array(count).fill(0).map((el)=> <Text/> )}
             </div>
-            {Array(count).fill(0).map((el)=> <Text/> )}
-            <Button style={{ marginTop:'10px' }} onClick={addText}>Add Text</Button>
-            <Button variant='success' style={{marginLeft:'10px',marginTop:'10px'}} onClick={(el) =>{exportComponentAsJPEG(memeRef)} }>Save</Button>
+           
+            <Button style={{ marginTop:'80px' }} onClick={addText}>Add Text</Button>
+            <Button variant='success' style={{marginLeft:'10px',marginTop:'80px'}} onClick={(el) =>{exportComponentAsJPEG(memeRef)} }>Save</Button>
         </div>
             )
 }

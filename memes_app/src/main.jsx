@@ -8,7 +8,7 @@ import LayOut from './LayOut.jsx';
 import Home from './components/pages/home/Home.jsx';
 import About from './components/pages/about/About.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Edit from './components/pages/home/edit.jsx'
+import Edit from './components/pages/home/Edit.jsx'
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<LayOut />} errorElement={<ErrorPage/>}>
@@ -16,7 +16,6 @@ const router = createBrowserRouter(
       <Route path='/about' element={<About />}/>
        <Route path='/edit' element={<Edit />}/>
     </Route>
-
   )
 )
 ReactDOM.createRoot(document.getElementById('root')).render(
